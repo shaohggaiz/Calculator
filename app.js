@@ -7,8 +7,8 @@ function appendToDisplay(input) {
 function Calclate() {
     try {
         display.value = eval(display.value);
-    } catch(reee) {
-        display.value = 'Error'
+    } catch(error) {
+        display.value = 'Error';
     }
 }
 
