@@ -5,9 +5,13 @@ function appendToDisplay(input) {
 }
 
 function Calclate() {
-    display.value = eval(display.value);
+    try {
+        display.value = eval(display.value);
+    } catch(reee) {
+        display.value = 'Error'
+    }
 }
 
 function ClearDisplay() {
-    
+    display.value = ''
 }
