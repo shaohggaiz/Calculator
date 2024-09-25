@@ -1,17 +1,17 @@
-const display = document.querySelector('#display');
+let display = document.querySelector('#displayAll');
+let equal = document.querySelector('#equal');
 
-function appendToDisplay(input) {
-    display.value += input
-}
 
-function Calclate() {
-    try {
-        display.value = eval(display.value);
-    } catch(error) {
-        display.value = 'Error';
-    }
-}
 
-function ClearDisplay() {
-    display.value = ''
+function displayData(input) {
+    display.value += input;
 }
+function equale() {
+    display.value = eval(display.value);
+}
+equal.addEventListener('click', equale);
+
+function clearData() {
+    display.value = '';
+}
+clear.addEventListener('click', clearData);

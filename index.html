@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div id="calculator">
-        <input type="text" id="display" readonly>
-        <div id="keys">
-            <button onclick="appendToDisplay('+')" class="opreator-btn">+</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('-')" class="opreator-btn">-</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')" class="opreator-btn">*</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('/')" class="opreator-btn">/</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="Calclate()">=</button>
-            <button onclick="ClearDisplay()" class="opreator-btn">C</button>
-        </div>
+
+  <div class="container">
+    <div class="keyes">
+      <div class="key">
+        <input type="text" id="displayAll" readonly>
+      </div>
+      <div class="buttons">
+        <button onclick="displayData('+')" class="Plau">+</button>
+      <button>O</button>
+      <button>%</button>
+      <button onclick="displayData('7')">7</button>
+      <button onclick="displayData('-')" class="Plau">-</button>
+      <button onclick="displayData('8')">8</button>
+      <button onclick="displayData('9')">9</button>
+      <button onclick="displayData('4')">4</button>
+      <button onclick="displayData('*')" class="Plau">*</button>
+      <button onclick="displayData('5')">5</button>
+      <button onclick="displayData('6')">6</button>
+      <button onclick="displayData('1')">1</button>
+      <button onclick="displayData('/')" class="Plau">/</button>
+      <button onclick="displayData('2')">2</button>
+      <button onclick="displayData('3')">3</button>
+      <button onclick="displayData('.')">.</button>
+      <button id="clear" class="Plau">c</button>
+      <button onclick="displayData('0')">0</button>
+      <button id="equal" class="Plau">=</button>
+      </div>
+      
     </div>
+  </div>
+  
 
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
